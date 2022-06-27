@@ -1,7 +1,7 @@
 #include <locale.h>
 #include <stdio.h>
 
-///Feito por Daniel Alves Freitas (SoliDan.it) e Vitor Cardoso Silva (vitorcs1)
+///Feito por Daniel Alves Freitas (Soliit) e Vitor Cardoso Silva (vitorcs1)
 
 int procurar_distancia(int cidades[5][5], int linha, int coluna) {
 
@@ -41,19 +41,19 @@ int main(void) {
 
   do {
 
-    printf("\n- Digite por quantas cidades o trajeto ser· feito (Contando com "
+    printf("\n- Digite por quantas cidades o trajeto ser√° feito (Contando com "
            "a de partida): ");
     scanf("%d", &qtd_cidades);
 
-    printf("\n- Digite o Itiner·rio completo:\n");
+    printf("\n- Digite o Itiner√°rio completo:\n");
     for (int count = 0; count < qtd_cidades; ++count) {
       scanf("%d", &num_cidades[count]);
     }
 
-    printf("\n- Digite o consumo do veÌculo (dist‚ncia em Km que o veÌculo "
-           "percorre com 1 litro de combustÌvel): ");
+    printf("\n- Digite o consumo do ve√≠culo (dist√¢ncia em Km que o ve√≠culo "
+           "percorre com 1 litro de combust√≠vel): ");
     scanf("%lf", &consumo);
-    printf("\n- Digite o valor do litro(l) do combustÌvel a ser utilizado: ");
+    printf("\n- Digite o valor do litro(l) do combust√≠vel a ser utilizado: ");
     scanf("%lf", &val_combustivel);
 
     x = num_cidades[0];
@@ -71,11 +71,11 @@ int main(void) {
     }
 
     printf("\n[########- RESULTADOS -#########]\n"
-             "|- Dist‚ncia: %d Km            |\n"
-             "|- Custo CombustÌvel: R$ %.2lf  |\n",
+             "|- Dist√¢ncia: %d Km            |\n"
+             "|- Custo Combust√≠vel: R$ %.2lf  |\n",
            soma_distancia, soma_combustivel);
 
-    printf("\n- Deseja realizar outro processo? [1] SIM / [2] N√O: ");
+    printf("\n- Deseja realizar outro processo? [1] SIM / [2] N√ÉO: ");
       scanf("%d", &ask);
     
   }
